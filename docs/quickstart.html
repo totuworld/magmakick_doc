@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  
+<script src="//use.typekit.net/aem3dbj.js"></script>
+<script>try{Typekit.load();}catch(e){}</script>
+
+
+
+
+<script src="/resources-prod/site.head-2acc75ce.js"></script>
+
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Firebase is a powerful platform for your mobile and web applications. Build cross-platform apps in minutes with our powerful platform. Firebase can power your app’s backend, user authentication, static hosting, and more. Focus on creating extraordinary experiences for your users, we’ll take care of the rest.">
+  <meta name="keywords" content="realtime, backend as a service, websockets, instant API, mobile database, Angular Bindings, Backbone Bindings, Ember Bindings, iOS plugins, Android plugins, javascript API, realtime sync, browser, mobile, no servers, build apps fast, servers optional, completely realtime, build collaborative apps, real-time, JSON data, First-class Security, Automatic Scaling, Real-time Synchronization, Data Accessibility, Free Sign Up, ">
+  <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all">
+
+
+  <meta itemprop="image" content="https://www.firebase.com/resources/images/website/share/docs.png">
+  <meta itemprop="description" content="Firebase is a powerful platform for your mobile and web applications. Build cross-platform apps in minutes with our powerful platform. Firebase can power your app’s backend, user authentication, static hosting, and more. Focus on creating extraordinary experiences for your users, we’ll take care of the rest.">
+  <meta itemprop="name" content="Web Quickstart - Firebase">
+
+  
+  <meta property="st:title" content="Web Quickstart - Javascript">
+
+
+  <script type="text/javascript">
+  (function(){
+    var isiPad = navigator.userAgent.match(/iPad/i) != null;
+
+    if(isiPad) {
+      //CHANGE VIEWPORT BACK TO DEFAULT FOR IPAD
+      var viewport = document.getElementById('viewport');
+      viewport.setAttribute('content', 'width=980, user-scalable=yes, minimum-scale=.25, maximum-scale=1.6 ');
+    }
+  })();
+</script>
+  <link rel="stylesheet" href="/resources-prod/site.head-4738def2.css">
+
+
+
+<link rel="stylesheet" type="text/css" href="//cloud.typography.com/6470674/767528/css/fonts.css" />
+
+
+
+
+  <title>Web Quickstart - Firebase</title>
+</head>
+<body data-page-id="" class="docs-wrapper">
+  <div id="page-content">
+    <header class="nav nav-top">
+  <nav>
+    <h1><a href="/">Firebase</a></h1>
+
+    <a href="#" class="button-mobile-menu">Site Menu</a>
+
+    <ul class="text-medium" id="main-nav">
+      <li><a href="/signup/" id="nav-signup" class="button button-flat-primary button-rounded button-signup">Sign Up with Google</a></li>
+      <li><a id="nav-login" href="/login/" class="button button-flat-plain button-rounded button-login">Login</a></li>
+      <li><a href="/docs/" class="selected button button-flat-plain button-rounded">Docs</a></li>
+      <li><a href="/pricing.html" class=" button button-flat-plain button-rounded">Pricing</a></li>
+      <li><a href="/features.html" class=" button button-flat-plain button-rounded">Features</a></li>
+      <li><a href="/" class=" button button-flat-plain button-rounded">Overview</a></li>
+    </ul>
+  </nav>
+</header>
+    <nav id="docs-nav" class="docs-sidebar docs-nav">
+  <!-- SEARCH -->
+  <header>
+    <form>
+      <input type="search" id="st-search-input" placeholder="Search Docs..." />
+    </form>
+    <a href="#" class="button-mobile-docs-menu">Docs Menu</a>
+  </header>
+
+  <div id="docs-dropdown" class="docs-dropdown">
+    <!-- HOME -->
+    <section>
+      <ul class="section primary-list">
+        <li><a href="/docs"><i class="icon-home"></i>Docs Home</a></li>
+      </ul>
+    </section>
+
+    <!-- PLATFORMS -->
+    <section>
+      <h3>platforms</h3>
+
+      <!-- WEB -->
+      
+
+
+<!-- ASSIGN CURRENT CLASS -->
+
+  
+
+
+<ul class="section primary-list">
+  <li>
+    <a href="/docs/web/" class="current">
+      <!-- ASSIGN LINK ICON -->
+      
+        <i class="icon-earth"></i>Web
+      
+    </a>
+
+    <!-- NESTED LIST -->
+    
+      
+
+<ul class="secondary-list">
+  
+  <!-- ASSIGN CURRENT CLASS -->
+    
+      
+    
+
+    <li>
+      <a href="/docs/web/quickstart.html" class="current">
+        Quickstart
+      </a>
+
+      
+
+    </li>
+  
+  <!-- ASSIGN CURRENT CLASS -->
+    
+      
+    
+
+    <li>
+      <a href="/docs/web/guide/" class="">
+        Guide
+      </a>
+
+      
+
+    </li>
+  
+  <!-- ASSIGN CURRENT CLASS -->
+    
+      
+    
+
+    <li>
+      <a href="/docs/web/api/" class="">
+        API Reference
+      </a>
+
+      
+
+    </li>
+  
+  <!-- ASSIGN CURRENT CLASS -->
+    
+      
+    
+
+    <li>
+      <a href="/docs/web/libraries/" class="">
+        Libraries
+      </a>
+
+      
+
+    </li>
+  
+  <!-- ASSIGN CURRENT CLASS -->
+    
+      
+    
+
+    <li>
+      <a href="/docs/web/examples.html" class="">
+        Examples
+      </a>
+
+      
+
+    </li>
+  
+  <!-- ASSIGN CURRENT CLASS -->
+    
+      
+    
+
+    <li>
+      <a href="/docs/web/recipes.html" class="">
+        Recipes
+      </a>
+
+      
+
+    </li>
+  
+</ul>
+
+    
+  </li>
+</ul>
+
+      <!-- IOS -->
+      
+
+
+<!-- ASSIGN CURRENT CLASS -->
+
+  
+
+
+<ul class="section primary-list">
+  <li>
+    <a href="/docs/ios/" class="">
+      <!-- ASSIGN LINK ICON -->
+      
+        <i class="icon-apple"></i>iOS
+      
+    </a>
+
+    <!-- NESTED LIST -->
+    
+  </li>
+</ul>
+
+      <!-- JAVA -->
+      
+
+
+<!-- ASSIGN CURRENT CLASS -->
+
+  
+
+
+<ul class="section primary-list">
+  <li>
+    <a href="/docs/android/" class="">
+      <!-- ASSIGN LINK ICON -->
+      
+        <i class="icon-android"></i>Android
+      
+    </a>
+
+    <!-- NESTED LIST -->
+    
+  </li>
+</ul>
+
+      <!-- REST -->
+      
+
+
+<!-- ASSIGN CURRENT CLASS -->
+
+  
+
+
+<ul class="section primary-list">
+  <li>
+    <a href="/docs/rest/" class="">
+      <!-- ASSIGN LINK ICON -->
+      
+        <i class="icon-console"></i>REST
+      
+    </a>
+
+    <!-- NESTED LIST -->
+    
+  </li>
+</ul>
+    </section>
+
+
+    <!-- SECURITY -->
+    <section>
+      
+
+
+<!-- ASSIGN CURRENT CLASS -->
+
+  
+
+
+<ul class="section primary-list">
+  <li>
+    <a href="/docs/security/" class="">
+      <!-- ASSIGN LINK ICON -->
+      
+        <i class="icon-lock"></i>Security &amp; Rules
+      
+    </a>
+
+    <!-- NESTED LIST -->
+    
+  </li>
+</ul>
+    </section>
+
+    <!-- HOSTING -->
+    <section>
+      
+
+
+<!-- ASSIGN CURRENT CLASS -->
+
+  
+
+
+<ul class="section primary-list">
+  <li>
+    <a href="/docs/hosting/" class="">
+      <!-- ASSIGN LINK ICON -->
+      
+        <i class="icon-rocket"></i>Hosting
+      
+    </a>
+
+    <!-- NESTED LIST -->
+    
+  </li>
+</ul>
+    </section>
+
+    <!-- OPEN DATA  -->
+    <section>
+      
+
+
+<!-- ASSIGN CURRENT CLASS -->
+
+  
+
+
+<ul class="section primary-list">
+  <li>
+    <a href="/docs/open-data/" class="">
+      <!-- ASSIGN LINK ICON -->
+      
+        <i class="icon-database2"></i>Open Data Sets
+      
+    </a>
+
+    <!-- NESTED LIST -->
+    
+  </li>
+</ul>
+    </section>
+
+    <!-- HELP & SUPPORT -->
+    <section>
+      <ul class="section primary-list">
+        <li><a href="/docs/help"><i class="icon-thumbs-up"></i>Help &amp; Support</a></li>
+      </ul>
+    </section>
+
+
+    <!-- HELP & SUPPORT
+    <section class="meta-info">
+      <h3>Help &amp; Support</h3>
+
+      <ul>
+        <li><a href="#">Support Center</a></li>
+        <li><a href="/contact.html">Contact Us</a></li>
+      </ul>
+    </section>
+    -->
+  </div>
+</nav>
+
+
+    <main class="docs-main-content">
+      
+
+
+<header class="docs-hero">
+  <div class="docs-hero-inner">
+
+    
+    
+    
+    
+
+    <!-- SUBTITLE  -->
+    
+      
+        <h3>5 minute quickstart</h3>
+      
+    
+
+    <!-- TITLE -->
+    
+      <h2 class="light ">
+        
+        Web Quickstart
+      </h2>
+    
+
+    <!-- BUTTONS -->
+    
+      <div class="hero-actions">
+        
+          
+            <a class="hero-action-primary button button-rounded button-flat-plain" href="/login/">
+              Sign Up &amp; Start Hacking
+            </a>
+          
+        
+      </div>
+    
+  </div>
+
+  <!-- VIDEO -->
+  
+    <div class="docs-hero-video">
+      <a href="//www.youtube.com/embed/gL-jNk8SzUo" class='video-link' data-type="video">
+        <i class="icon-play3"></i>
+        
+          Web Quickstart
+        
+        
+          (2:47)
+        
+      </a>
+    </div>
+  
+</header>
+      
+
+      <article class="grid-fluid">
+        <!-- STEP 1 ########################## -->
+<div class="content-block content-number clearfix">
+  <i class="number icon-number large"></i>
+  <div class="c11">
+    <h3>Create an account</h3>
+
+    <p>
+      The first thing you need to do to get started with Firebase is <a href="/login/">sign up for
+      a free account</a>. A brand new Firebase app will automatically be created for you with its
+      own unique database URL ending in <code>firebaseio.com</code>. We'll use this database URL to
+      store and sync data.
+    </p>
+  </div>
+</div>
+
+
+<!-- STEP 2 ########################## -->
+<div class="content-block content-number clearfix">
+  <i class="number icon-number2 large"></i>
+  <div class="c11">
+    <h3>Install Firebase</h3>
+
+    <p>
+      To include the Firebase client library in your website, add a script tag to the
+      <code>&lt;head&gt;</code> section of your HTML file. We recommend including the
+      library directly from our CDN:
+    </p>
+
+    <pre class="prettyprint linenums  lang-html" data-lang="html" data-name="html" data-highlight="" data-resize="false"><code>&lt;script src=&quot;https://cdn.firebase.com/js/client/2.4.1/firebase.js&quot;&gt;&lt;/script&gt;</code></pre>
+
+    <p class="alert alert-info full-width">
+      Firebase is also available as a Bower dependency via "bower install firebase".
+    </p>
+
+    <section class="docs-sub-section">
+      <h4>Node.js Setup</h4>
+      <p>
+        <strong>The Firebase JavaScript API and the Firebase Node.js API are exactly the
+        same</strong>. Firebase clients run just as easily on your servers as they do on end-user
+        devices. We offer a Node.js module which can be installed via npm from the command line:
+      </p>
+
+      <pre class="prettyprint linenums  lang-bash" data-lang="bash" data-name="bash" data-highlight="" data-resize="false"><code>$ npm install firebase --save</code></pre>
+
+      <p>
+        To use the Firebase Node.js module in your application, just <code>require</code> the
+        Firebase client library.
+      </p>
+
+      <pre class="prettyprint linenums  lang-" data-lang="" data-name="" data-highlight="" data-resize="false"><code>var Firebase = require(&quot;firebase&quot;);</code></pre>
+    </section>
+  </div>
+</div>
+
+
+<!-- STEP 3 ########################## -->
+<div class="content-block content-number clearfix">
+  <i class="number icon-number3 large"></i>
+  <div class="c11">
+    <h3>Read &amp; Write Data</h3>
+
+    <p>
+      To read and write data to and from a Firebase database, we need to first create a reference
+      to it. We do this by passing the URL of our Firebase app into the <code>Firebase</code>
+      constructor:
+    </p>
+
+    <pre class="prettyprint linenums  lang-" data-lang="" data-name="" data-highlight="" data-resize="false"><code>var myFirebaseRef = new Firebase(&quot;https://&lt;YOUR-FIREBASE-APP&gt;.firebaseio.com/&quot;);</code></pre>
+
+    <p>
+      There are several other ways to create a reference to a location in our database.
+      These are all explained in our <a href="guide/understanding-data.html">understanding data
+      section</a>.
+    </p>
+
+    <section class="docs-sub-section">
+      <h4>Writing Data</h4>
+
+      <div class="c6">
+        <p>
+          Once we have a reference to our database, we can write any valid JSON object to it
+          using <code>set()</code>. Our <a href="guide/saving-data.html">guide on saving data</a>
+          explains the different write methods the API offers and how to know when the data has been
+          successfully written.
+        </p>
+      </div>
+
+      <div class="c6">
+        <pre class="prettyprint linenums  lang-" data-lang="" data-name="" data-highlight="" data-resize="false"><code>myFirebaseRef.set({
+  title: &quot;Hello World!&quot;,
+  author: &quot;Firebase&quot;,
+  location: {
+    city: &quot;San Francisco&quot;,
+    state: &quot;California&quot;,
+    zip: 94103
+  }
+});</code></pre>
+      </div>
+
+      <div class="clear"></div>
+    </section>
+
+    <section class="docs-sub-section">
+      <h4>Reading Data</h4>
+
+      <p>
+        Reading data from our database is accomplished by attaching callbacks and handling
+        the resulting events. Assuming we already wrote to <code>myFirebaseRef</code> above, we can
+        retrieve the <code>city</code> value by using the <code>on()</code> method:
+      </p>
+
+      <pre class="prettyprint linenums  lang-" data-lang="" data-name="" data-highlight="" data-resize="false"><code>myFirebaseRef.child(&quot;location/city&quot;).on(&quot;value&quot;, function(snapshot) {
+  alert(snapshot.val());  // Alerts &quot;San Francisco&quot;
+});</code></pre>
+
+      <div class="alert alert-info full-width">
+        Call <strong>val()</strong> on the <code>DataSnapshot</code> returned from the callback to
+        access a JSON object.
+      </div>
+
+      <p>
+        In the example above, the <code>value</code> event will fire once for the initial state of the
+        data, and then again every time the value of that data changes. You can learn more about the
+        various event types and how to handle event data in our
+        <a href="guide/retrieving-data.html">documentation on reading data</a>.
+      </p>
+    </section>
+  </div>
+</div>
+
+
+<!-- STEP 4 ########################## -->
+<div class="content-block content-number clearfix">
+  <i class="number icon-number4 large"></i>
+  <div class="c11">
+    <h3>Deploy to Firebase Hosting</h3>
+
+    <p>
+      Firebase Hosting lets us deploy our application's static files (HTML, CSS, JavaScript, etc.)
+      to the web with a single command. To get started, download <code>firebase-tools</code> via npm:
+    </p>
+
+    <pre class="prettyprint linenums  lang-bash" data-lang="bash" data-name="bash" data-highlight="" data-resize="false"><code>$ npm install -g firebase-tools</code></pre>
+
+    <p>
+      <a href="../hosting/quickstart.html">Read through our hosting quickstart</a> to get up and
+      running in minutes. Firebase Hosting is a production-grade service, with security, reliability,
+      and scalability baked-in. We host content on a global CDN and even provision an SSL
+      certificate automatically for you so you can be up-and-running with only the following command:
+    </p>
+
+    <pre class="prettyprint linenums  lang-bash" data-lang="bash" data-name="bash" data-highlight="" data-resize="false"><code>$ firebase deploy</code></pre>
+
+    <div class="alert alert-info full-width">
+      Paid Firebase apps can serve their files from a custom domain name!
+    </div>
+  </div>
+</div>
+
+
+<!-- STEP 5 ########################## -->
+<div class="content-block content-number clearfix">
+  <i class="number icon-number5 large"></i>
+  <div class="c11">
+    <h3>Authenticate Your Users</h3>
+
+    <p>
+        Firebase provides full support for authenticating users with Email &amp; Password, Facebook, Twitter, GitHub, Google, or your existing authentication system.</p>
+    <p>
+        To get started with Email &amp; Password auth, enable the <strong>Email &amp; Password</strong> provider in the App Dashboard:
+    </p>
+    <ol>
+        <li>Choose the <strong>Login &amp; Auth</strong> tab.</li>
+        <li>Select the <strong>Email &amp; Password</strong> tab and enable authentication.</li>
+    </ol>
+    <p>
+        Now that the authentication provider is enabled you can create a new user:
+    </p>
+
+      <pre class="prettyprint linenums  lang-" data-lang="" data-name="" data-highlight="" data-resize="false"><code>myFirebaseRef.createUser({
+  email    : &quot;bobtony@firebase.com&quot;,
+  password : &quot;correcthorsebatterystaple&quot;
+}, function(error, userData) {
+  if (error) {
+    console.log(&quot;Error creating user:&quot;, error);
+  } else {
+    console.log(&quot;Successfully created user account with uid:&quot;, userData.uid);
+  }
+});</code></pre>
+
+    <p>
+        Once you've created your first user, you can log them in using the <code><a href="guide/login/password.html#section-logging-in">authWithPassword</a></code> method.
+    </p>
+
+    <p>
+        Learn how to authenticate via Facebook, Twitter, Google or your own custom system in our <a href="guide/user-auth.html">User Authentication</a>
+        guide.
+    </p>
+
+  </div>
+</div>
+
+
+<!-- STEP 6 ########################## -->
+<div class="content-block content-number clearfix">
+  <i class="number icon-number6 large"></i>
+  <div class="c11">
+    <h3>Secure Your Data</h3>
+
+    <p>
+      Powerful expression-based <a href="guide/securing-data.html">Security and Firebase Rules</a>
+      provide fine-grained control over who has access to our data and allow us to validate writes
+      to our database data:
+    </p>
+
+    <pre class="prettyprint linenums  lang-" data-lang="" data-name="" data-highlight="" data-resize="false"><code>{
+  &quot;rules&quot;: {
+    &quot;.read&quot;: true,
+    &quot;.write&quot;: &quot;auth.uid === 'admin'&quot;,
+    &quot;.validate&quot;: &quot;newData.isString() &amp;&amp; newData.val().length &lt; 500&quot;
+  }
+}</code></pre>
+
+    <p>
+      Our Security and Firebase Rules are enforced consistently whenever data is accessed. The rules
+      language is designed to be both powerful and flexible, so that you can maintain fine-grained
+      control over your application's data.
+    </p>
+  </div>
+</div>
+
+
+<!-- STEP 7 ########################## -->
+<div class="content-block content-number clearfix">
+  <i class="number icon-number7 large"></i>
+  <div class="c11">
+    <h3>Explore Our Bindings</h3>
+
+    <p class="c5">
+      In addition to our core API, we have bindings for <a href="/docs/web/libraries/angular/">AngularJS</a>,
+      <a href="/docs/web/libraries/backbone/quickstart.html">Backbone</a>, <a href="/docs/web/libraries/ember/">Ember</a>,
+      and <a href="/docs/web/libraries/react/">ReactJS</a> which make it even easier to use Firebase
+      with those frameworks.
+    </p>
+
+    <div class="c7">
+      <img src="/resources/images/website/logos/frameworks.png" alt="AngularJS, EmberJS, Backbone.js, Javascript, iOS7, OSX, Android" />
+    </div>
+
+  </div>
+</div>
+
+
+<!-- STEP 8 ########################## -->
+<div class="content-block content-number clearfix">
+  <i class="number icon-number8 large"></i>
+  <div class="c11">
+    <h3>What's Next?</h3>
+
+    <ul>
+      <li>Read the <a href="/docs/web/guide">Development Guide</a> </li>
+      <li>View the full <a href="/docs/web/api">JavaScript API</a> </li>
+      <li>Explore our <a href="/docs/web/examples.html">code examples</a> </li>
+    </ul>
+  </div>
+</div>
+
+      </article>
+    </main>
+
+    <footer class="nav nav-footer">
+
+  <h5><a href="/">Firebase</a></h5>
+  <ul>
+    <li><a href="/docs/help/">Help &amp; Support</a></li>
+    <li><a href="/contact.html">Contact Info</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="/terms/privacy-policy.html">Privacy Policy</a></li>
+    <li><a href="/terms/terms-of-service.html">Terms of Service</a></li>
+    <li><a href="/terms/service-level-agreement.html">Service Level Agreement</a></li>
+  </ul>
+
+  <ul class="social">
+    <li><a href="https://www.facebook.com/Firebase" class="facebook"><i class="icon-facebook"></i></a></li>
+    <li><a href="https://twitter.com/Firebase" class="twitter"><i class="icon-twitter"></i></a></li>
+    <li><a href="https://plus.google.com/115330003035930967645" class="googleplus"><i class="icon-googleplus"></i></a></li>
+    <li><a href="https://www.linkedin.com/company/firebase" class="linkedin"><i class="icon-linkedin"></i></a></li>
+  </ul>
+
+</footer>
+  </div>
+
+
+
+  <!-- EXTERNAL SCRIPTS -->
+
+
+
+<!-- APP SCRIPTS -->
+  <!--<script src="/resources-prod/site.body.app-79139372.js"></script>-->
+
+
+
+
+<!-- INTERNET EXPLORER -->
+  <!--[if lt IE 10]><script src="/resources/bower/jQuery.XDomainRequest/jquery.xdomainrequest.min.js"></script><![endif]-->
+
+</body>
+</html>
